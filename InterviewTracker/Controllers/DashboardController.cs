@@ -28,8 +28,7 @@ namespace InterviewTracker.Controllers
         /// <param name="search"></param>
         /// <param name="page"></param>
         /// <returns></returns>
-        [HttpGet]
-        [Route("dashboard/allinterviews")]
+       
         public async Task<IActionResult> AllInterviewAsync()
         {
             //Write Your Code Here
@@ -41,8 +40,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPut]
-        [Route("dashboard/editinterview")]
+       
         public async Task<IActionResult> EditInterview(EditInterviewViewModel model)
         {
             //Write Your Code Here
@@ -54,8 +52,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="interviewId"></param>
         /// <returns></returns>
-        [HttpDelete]
-        [Route("dashboard/deletinterview/{interviewId}")]
+       
         public async Task<IActionResult> DeleteInterview(int interviewId)
         {
             //Write Your Code Here
@@ -66,8 +63,7 @@ namespace InterviewTracker.Controllers
         /// Get  Interview by interviewer name 
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
-        [Route("dashboard/interviewbyname/{name}")]
+      
         public async Task<IActionResult> InterviewByInterviewerName(string name)
         {
             //Write Your Code Here
