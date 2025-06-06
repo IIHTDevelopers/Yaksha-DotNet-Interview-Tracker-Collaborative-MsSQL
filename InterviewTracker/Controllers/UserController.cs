@@ -26,8 +26,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPost]
-        [Route("user/getallusers")]
+       
         public async Task<IEnumerable<ApplicationUser>> GetAllUsers()
         {
             //Write Your Code Here
@@ -39,8 +38,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPost]
-        [Route("user/registeruser")]
+       
         public async Task<IActionResult> RegisterUser(RegisterViewModel model)
         {
             //Write Your Code Here
@@ -52,8 +50,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPut]
-        [Route("user/edituser")]
+      
         public async Task<IActionResult> EditUser(UserEditViewModel model)
         {
             //Write Your Code Here
@@ -65,8 +62,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="UserId"></param>
         /// <returns></returns>
-        [HttpDelete]
-        [Route("user/deleteuser/{UserId}")]
+       
         public async Task<IActionResult> DeleteUser(int UserId)
         {
             //Write Your Code Here
