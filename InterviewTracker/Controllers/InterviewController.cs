@@ -29,8 +29,7 @@ namespace InterviewTracker.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        [HttpPost]
-        [Route("interview/addnewinterview")]
+       
         public async Task<IActionResult> AddNewInterview(AddInterviewViewModel model)
         {
             //Write Your Code Here
@@ -41,8 +40,7 @@ namespace InterviewTracker.Controllers
         /// Count all interviews
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
-        [Route("interview/countallinterviews")]
+      
         public async Task<IActionResult> CountAllInterview()
         {
             //Write Your Code Here
